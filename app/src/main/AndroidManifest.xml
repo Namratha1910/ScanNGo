@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scanngo2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo5"
+        android:label="ScanGo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.scanngo2.SplashScreen"
+            android:configChanges="orientation|screenSize"
+            android:label="ScanGo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.scanngo2.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="ScanGo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.neil.sonyvaio.billapp.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.scanngo2.Main2Activity" />
+        <activity
+            android:name="com.example.scanngo2.offerpage"
+            android:label="@string/title_activity_offerpage" />
+        <activity android:name="com.example.scanngo2.aboutpage" />
+        <activity android:name="com.example.scanngo2.payement"></activity>
+    </application>
+
+</manifest>
